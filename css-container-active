@@ -1,0 +1,48 @@
+
+.panel {
+  position: relative;
+  transition: flex 0.5s ease-in;
+  cursor: pointer;
+  flex: 0.5;
+  
+}
+
+.panel.active  {
+  opacity: 1;
+  transition: all 0.5s ease-in 0.4s;
+  flex: 8;
+}
+
+.panel h2  {
+    /*font-size: calc(24 / 16 * 1rem);*/
+  position: absolute;
+  opacity: 0;
+}
+
+.panel p {
+  position: absolute;
+  opacity: 0;
+}
+
+.panel .elementor-button {
+    /*font-size: calc(24 / 16 * 1rem);*/
+  position: absolute;
+  opacity: 0;
+}
+
+
+.panel.active h2 {
+  opacity: 1;
+  transition: all 0.5s ease-in 0.4s;
+}
+
+.panel.active p {
+  opacity: 1;
+  transition: all 0.5s ease-in 0.4s;
+}
+
+.panel.active .elementor-button {
+  opacity: 1;
+  transition: all 0.5s ease-in 0.4s;
+}
+
